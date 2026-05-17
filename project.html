@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Таємний Проєкт</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <audio id="bgMusic" autoplay loop>
+      <source
+        src="https://www.myinstants.com/media/sounds/gravity-falls-theme-song.mp3"
+      />
+    </audio>
+
+    <div class="container">
+      <div class="top-bar">
+        <img
+          src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8d40e9ca-1974-4a87-bbfa-165264db741b/dg93fci-956734e4-741b-419f-88c8-1c9632d3a9d6.png/v1/fill/w_837,h_955/bill_cipher__gravity_falls__render_by_soul151killer_dg93fci-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTM4OSIsInBhdGgiOiJcL2ZcLzhkNDBlOWNhLTE5NzQtNGE4Ny1iYmZhLTE2NTI2NGRiNzQxYlwvZGc5M2ZjaS05NTY3MzRlNC03NDFiLTQxOWYtODhjOC0xYzk2MzJkM2E5ZDYucG5nIiwid2lkdGgiOiI8PTEyMTcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.fOkR8jUoD18bwZEt1GjMCIFNVgamjrUNSwh4O0uJwfM"
+          class="bill"
+          alt="Bill Cipher"
+        />
+
+        <div class="control-panel">
+          <button onclick="toggleUV()" class="uv-btn">🟣 UV MODE</button>
+
+          <div class="music-controls">
+            <button onclick="toggleMusic()" id="musicBtn">🔊</button>
+
+            <input
+              type="range"
+              min="0"
+              max="1"
+              step="0.01"
+              value="0.15"
+              id="volumeSlider"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="uv-secrets">
+        <p>PROJECT ACTIVATED</p>
+
+        <p>THE MACHINE IS WORKING</p>
+
+        <p>DO NOT TRUST BILL</p>
+
+        <p>DIMENSIONAL BREACH DETECTED</p>
+
+        <p>⟟ THEY ARE WATCHING ⟟</p>
+      </div>
+
+      <div class="symbols">🜏 ☾ ⟟</div>
+
+      <header>
+        <h1>🔺 Таємний Проєкт</h1>
+
+        <p class="subtitle">Деякі речі не повинні існувати в нашому світі...</p>
+
+        <p class="secret-text">ACCESS LEVEL: RESTRICTED</p>
+      </header>
+
+      <section>
+        <h2>🧪 Опис Проєкту</h2>
+
+        <p>
+          Це експериментальна 3D модель, знайдена у старих записах Journal №3.
+        </p>
+
+        <p>За легендою, вона пов'язана з міжвимірним порталом.</p>
+      </section>
+
+      <section>
+        <h2>🌌 3D Модель</h2>
+
+        <div class="model-container">
+          <iframe
+            title="Gravity Falls - Interdimensional Portal"
+            frameborder="0"
+            allowfullscreen
+            mozallowfullscreen="true"
+            webkitallowfullscreen="true"
+            allow="autoplay; fullscreen; xr-spatial-tracking"
+            xr-spatial-tracking
+            execution-while-out-of-viewport
+            execution-while-not-rendered
+            web-share
+            src="https://sketchfab.com/models/6107d0aa1d5648c580a121de06c908b7/embed"
+          >
+          </iframe>
+        </div>
+
+        <div class="model-container">
+          <iframe
+            title="Gravity Falls"
+            frameborder="0"
+            allowfullscreen
+            mozallowfullscreen="true"
+            webkitallowfullscreen="true"
+            allow="autoplay; fullscreen; xr-spatial-tracking"
+            xr-spatial-tracking
+            execution-while-out-of-viewport
+            execution-while-not-rendered
+            web-share
+            src="https://sketchfab.com/models/477bbb39bc734d9fb4a0904d9a542c99/embed"
+          >
+          </iframe>
+        </div>
+      </section>
+
+      <section>
+        <h2>📓 Нотатки</h2>
+
+        <blockquote>
+          Якщо портал відкриється знову — часу залишиться дуже мало.
+        </blockquote>
+        <blockquote>
+          Об'єкт знайдено в лісах Gravity Falls. Ймовірно пов'язаний з
+          паранормальною активністю.
+        </blockquote>
+      </section>
+
+      <section>
+        <div class="buttons">
+          <a href="index.html">
+            <button>⬅ Назад до щоденника</button>
+          </a>
+        </div>
+      </section>
+
+      <p class="hidden-message">THE PORTAL IS STABLE... FOR NOW</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

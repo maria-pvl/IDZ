@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Щоденник №3</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <audio id="bgMusic" autoplay loop>
+      <source
+        src="https://www.myinstants.com/media/sounds/gravity-falls-theme-song.mp3"
+      />
+    </audio>
+
+    <div class="container">
+      <div class="top-bar">
+        <img
+          src="https://papik.pro/uploads/posts/2023-02/thumbs/1675923445_papik-pro-p-risunok-bil-shifer-2.png"
+          class="bill"
+          alt="Bill Cipher"
+        />
+
+        <div class="control-panel">
+          <button onclick="toggleUV()" class="uv-btn">🟣 UV MODE</button>
+
+          <div class="music-controls">
+            <button onclick="toggleMusic()" id="musicBtn">🔊</button>
+
+            <input
+              type="range"
+              min="0"
+              max="1"
+              step="0.01"
+              value="0.15"
+              id="volumeSlider"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="uv-secrets">
+        <p>⟟ TRUST NO ONE</p>
+
+        <p>THE TRUTH HIDES IN DETAILS</p>
+
+        <p>DON'T TRUST FIRST IMPRESSIONS</p>
+
+        <p>DON'T LOOK AT THE MOON</p>
+
+        <p>HE IS WATCHING</p>
+      </div>
+
+      <div class="symbols">🜏 ☾ ⟟</div>
+
+      <header>
+        <h1>📓 Щоденник №3</h1>
+
+        <p class="subtitle">Деякі загадки ніколи не повинні бути розкриті...</p>
+
+        <p class="secret-text">🔺 TRUST NO ONE 🔺</p>
+      </header>
+
+      <section>
+        <h2>👤 Хто я?</h2>
+
+        <p>
+          Мене звати Марія. Я люблю досліджувати дивні речі, аналізувати деталі
+          та помічати те, що інші часто ігнорують.
+        </p>
+
+        <p>📧 Mariia.Pavlova@infiz.khpi.edu.ua</p>
+      </section>
+
+      <section>
+        <h2>📚 Записи про навчання</h2>
+
+        <div class="semester-switch">
+          <button onclick="showSemester(1)">1 семестр</button>
+          <button onclick="showSemester(2)">2 семестр</button>
+          <button onclick="showSemester(3)">3 семестр</button>
+        </div>
+        <table id="sem1" class="semester-table active">
+          <tr>
+            <th>Предмет</th>
+            <th>Викладач</th>
+            <th>Оцінка</th>
+          </tr>
+          <tr>
+            <td>Алгоритмізація та програмування</td>
+            <td>Сенько А.В.</td>
+            <td>90</td>
+          </tr>
+          <tr>
+            <td>Аналітична геометрія</td>
+            <td>Морачковська І.О.</td>
+            <td>92</td>
+          </tr>
+          <tr>
+            <td>Історія та культура України</td>
+            <td>Красіков М.М.</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>Математичний аналіз</td>
+            <td>Лінник Г.Б.</td>
+            <td>85</td>
+          </tr>
+          <tr>
+            <td>Архітектура обчислювальних систем</td>
+            <td>Водка О.О.</td>
+            <td>93</td>
+          </tr>
+          <tr>
+            <td>Вступ за спеціальністю</td>
+            <td>Шеліхова І.Б.</td>
+            <td>95</td>
+          </tr>
+          <tr>
+            <td>Іноземна мова</td>
+            <td>Новицька Д.Є.</td>
+            <td>90</td>
+          </tr>
+          <tr>
+            <td>Фізичне виховання</td>
+            <td>Ширяєва С.В.</td>
+            <td>100</td>
+          </tr>
+        </table>
+
+        <table id="sem2" class="semester-table">
+          <tr>
+            <th>Предмет</th>
+            <th>Викладач</th>
+            <th>Оцінка</th>
+          </tr>
+          <tr>
+            <td>Дискретна математика</td>
+            <td>Татарінова О.А.</td>
+            <td>93</td>
+          </tr>
+          <tr>
+            <td>Лінійна алгебра</td>
+            <td>Морачковська І.О.</td>
+            <td>97</td>
+          </tr>
+          <tr>
+            <td>Об'єктно-орієнтоване програмування та проєктування</td>
+            <td>Розова Л.В.</td>
+            <td>99</td>
+          </tr>
+          <tr>
+            <td>Спеціальні глави вищої математики</td>
+            <td>Лінник Г.Б.</td>
+            <td>96</td>
+          </tr>
+          <tr>
+            <td>Українська мова</td>
+            <td>Писарська Н.В.</td>
+            <td>92</td>
+          </tr>
+          <tr>
+            <td>Іноземна мова</td>
+            <td>Орда О.Ф.</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>Операційні системи</td>
+            <td>Мєтєльов В.О.</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>Фізичне виховання</td>
+            <td>Ширяєва С.В.</td>
+            <td>100</td>
+          </tr>
+        </table>
+
+        <table id="sem3" class="semester-table">
+          <tr>
+            <th>Предмет</th>
+            <th>Викладач</th>
+            <th>Оцінка</th>
+          </tr>
+          <tr>
+            <td>Математична логіка, теорія алгоритмів та структури даних</td>
+            <td>Татарінова О.А.</td>
+            <td>92</td>
+          </tr>
+          <tr>
+            <td>Нарисна геометрія в задачах візуалізації</td>
+            <td>Федченко Г.В.</td>
+            <td>93</td>
+          </tr>
+          <tr>
+            <td>Організація баз даних</td>
+            <td>Мартиненко Г.Ю.</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>Програмування GUI</td>
+            <td>Дашкевич А.О.</td>
+            <td>99</td>
+          </tr>
+          <tr>
+            <td>Технології програмування</td>
+            <td>Шаповалова М.І.</td>
+            <td>94</td>
+          </tr>
+          <tr>
+            <td>Іноземна мова</td>
+            <td>Картун Н.О.</td>
+            <td>90</td>
+          </tr>
+          <tr>
+            <td>ОК СВУ</td>
+            <td>Ширяєва С.В.</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>Правознавство</td>
+            <td>Кузьменко О.В.</td>
+            <td>100</td>
+          </tr>
+        </table>
+      </section>
+
+      <section>
+        <h2>🎬 Дивні історії</h2>
+
+        <ul>
+          <li>
+            <a href="https://www.imdb.com/title/tt1865718/" target="_blank">
+              Gravity Falls
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.imdb.com/title/tt2554274/" target="_blank">
+              Crimson Peak
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.imdb.com/title/tt1130884/" target="_blank">
+              Shutter Island
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.imdb.com/title/tt1475582/" target="_blank">
+              Sherlock
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.imdb.com/title/tt2861424/" target="_blank">
+              Rick and Morty
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>🧠 3 слова про мене</h2>
+
+        <p>Уважна • Наполеглива • Спостережлива</p>
+      </section>
+
+      <section>
+        <h2>📸 Записи про настрій</h2>
+
+        <div class="moods">
+          <div class="mood-card">
+            <img
+              src="https://i.pinimg.com/236x/d0/2d/db/d02ddb94fa30cb9ff5ff72785cffb295.jpg"
+              alt="happy"
+            />
+            <p>Коли загадка нарешті складається в єдину картину.</p>
+          </div>
+
+          <div class="mood-card">
+            <img
+              src="https://amiel.club/uploads/posts/2022-03/1647629741_62-amiel-club-p-kartinki-dippera-iz-graviti-folz-67.png"
+              alt="sad"
+            />
+            <p>Коли навіть тиша здається підозрілою.</p>
+          </div>
+
+          <div class="mood-card">
+            <img
+              src="https://getwallpapers.com/wallpaper/full/0/d/e/7741.jpg"
+              alt="now"
+            />
+            <p>Поточний стан: аналізую все навколо.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>💬 Цитата</h2>
+
+        <blockquote>
+          "Reality is an illusion, the universe is a hologram." — Bill Cipher
+        </blockquote>
+      </section>
+
+      <section>
+        <h2>🗺 Моє місто</h2>
+
+        <p>
+          Я живу у Харкові — великому місті України, де завжди є що
+          досліджувати.
+        </p>
+
+        <iframe
+          src="https://www.google.com/maps?q=Kharkiv&output=embed"
+          height="350"
+        >
+        </iframe>
+      </section>
+
+      <section>
+        <h2>🌲 Архів дивних місць</h2>
+
+        <div class="slider">
+          <img
+            id="slide"
+            src="https://3.bp.blogspot.com/-WPNER7sDrVA/VzTUJDAZXhI/AAAAAAAAGZg/j1jiv2Dgd3cmnX8aRAItgfiS22LhhWBQQCLcB/s1600/S1e5_mystery_shack_sun_set.png"
+            alt="slider image"
+          />
+
+          <div class="buttons">
+            <button onclick="prevSlide()">⬅ Назад</button>
+
+            <button onclick="nextSlide()">Вперед ➡</button>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>🔺 Мій улюблений проєкт</h2>
+
+        <p>3D модель та атмосфера загадкового світу:</p>
+
+        <p>
+          <a href="/project.html"> Переглянути 3D модель </a>
+        </p>
+      </section>
+
+      <p class="hidden-message">SOME MYSTERIES SHOULD STAY UNSOLVED</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
