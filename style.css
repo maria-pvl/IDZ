@@ -386,6 +386,57 @@ input[type="range"] {
   text-shadow: 0 0 12px rgba(180, 100, 255, 0.8);
 }
 
+.symbols {
+  position: absolute;
+
+  bottom: 20px;
+  right: 30px;
+
+  font-size: 1.5rem;
+
+  opacity: 0;
+
+  color: #d291ff;
+
+  text-shadow: 0 0 15px rgba(180, 100, 255, 0.8);
+
+  transition: 0.8s;
+}
+
+/*уф контейнер*/
+
+.uv-secrets {
+  position: absolute;
+
+  inset: 0;
+
+  pointer-events: none;
+
+  opacity: 0;
+
+  transition: 0.8s;
+
+  overflow: hidden;
+}
+
+/* прихований текст */
+
+.hidden-message {
+  opacity: 0;
+
+  margin-top: 20px;
+
+  text-align: center;
+
+  color: #e0aaff;
+
+  transition: 1s;
+
+  font-size: 1.1rem;
+
+  letter-spacing: 2px;
+}
+
 /* уф тема */
 
 .uv-mode {
@@ -423,8 +474,6 @@ input[type="range"] {
   text-shadow: 0 0 15px rgba(180, 100, 255, 0.5);
 }
 
-/* секрет проявляється */
-
 .uv-mode .secret-text {
   opacity: 1;
 }
@@ -439,45 +488,9 @@ input[type="range"] {
   background: rgba(120, 0, 255, 0.08);
 }
 
-/* прихований текст */
-
-.hidden-message {
-  opacity: 0;
-
-  margin-top: 20px;
-
-  text-align: center;
-
-  color: #e0aaff;
-
-  transition: 1s;
-
-  font-size: 1.1rem;
-
-  letter-spacing: 2px;
-}
-
 .uv-mode .hidden-message {
   opacity: 1;
 }
-
-/*уф контейнер*/
-
-.uv-secrets {
-  position: absolute;
-
-  inset: 0;
-
-  pointer-events: none;
-
-  opacity: 0;
-
-  transition: 0.8s;
-
-  overflow: hidden;
-}
-
-/*поява написів */
 
 .uv-mode .uv-secrets {
   opacity: 1;
@@ -522,23 +535,6 @@ input[type="range"] {
 .uv-secrets p:nth-child(5) {
   top: 55%;
   left: 40%;
-}
-
-.symbols {
-  position: absolute;
-
-  bottom: 20px;
-  right: 30px;
-
-  font-size: 1.5rem;
-
-  opacity: 0;
-
-  color: #d291ff;
-
-  text-shadow: 0 0 15px rgba(180, 100, 255, 0.8);
-
-  transition: 0.8s;
 }
 
 .uv-mode .symbols {
